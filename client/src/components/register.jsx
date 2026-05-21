@@ -139,7 +139,28 @@ if (response.ok){
    }
  
   return (
-  <Container className='mt-5'>
+
+<>
+  <button onClick={() =>
+
+      setShowForm(false)
+
+    }
+     style={{
+      background:'none',
+      border:'none',
+      color:'#2563eb',
+      fontSize:'18px',
+      cursor:'pointer',
+      marginBottom:'20px',
+      fontWeight:'bold'
+     }}
+      
+    >
+      ⬅️Back To List
+    </button>
+
+<Container className='mt-5'>
     <Row className="justify-content-center">
       <Col md={6}>
         <Card className="shadow rounded input-card" >
@@ -355,8 +376,16 @@ if (response.ok){
                 </Form.Group>
                </Col>
             </Row>
-            <div className='text-center'>
+            <div className='text-center'
+             style={{
+              display:'flex',
+              justifyContent:'center',
+              gap:'20px'
+             }}>
              <Button variant='outline-primary' type='submit'>Create Patient Record</Button>
+             <Button variant='outline-danger' type='button' onClick={()=>
+              setShowForm(false)
+             }> Cancel</Button>
            </div>
            </Form>
            
@@ -365,6 +394,7 @@ if (response.ok){
       </Col>
     </Row>
   </Container>
+  </>
 
 )
 }
