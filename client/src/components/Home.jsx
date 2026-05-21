@@ -22,20 +22,14 @@ function Home() {
       }}>
         HEALTH PORTAL!!!
       </h1>
-        <img src={stethoscope} alt='' style={{
-
-         width:'250px',
-
-         position:'absolute',
-
-         top:'30px',
-
-         left:'2px'
-
-
-        }}/>
-     
-      <p style={{
+        <img src={stethoscope} alt='' 
+          style={{
+          width:'250px',
+          position:'absolute',
+          top:'30px',
+          left:'2px'
+          }}/>
+       <p style={{
         fontSize:'22px',
         color:'black',
         marginBottom:'30px',
@@ -53,9 +47,7 @@ function Home() {
         cursor:'pointer'
 
       }}
-      
-      
-      >
+   >
         Register Patient There👉
       </button>
       </div>
